@@ -8,9 +8,10 @@ namespace Exemplos
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            I sum = new Soma();
+            /*I sum = new Soma();
             I sub = new Subtraccao();
             I mul = new Multiplicacao();
 
@@ -33,8 +34,23 @@ namespace Exemplos
             Console.WriteLine(mul.idade());
             Console.WriteLine(mul.contas(a, b));
 
-            Console.ReadKey();
+            Console.ReadKey();*/
 
+            Action x = () => Console.WriteLine("mensagem");
+
+            Func<int, int, int> z = w;
+
+            Console.WriteLine( z(1, 2) );
+
+            Teste.showBox( x );
+
+            Console.ReadKey();
+        }
+
+
+        static int w(int a, int b)
+        {
+            return a+b;
         }
     }
 }
