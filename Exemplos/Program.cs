@@ -32,6 +32,9 @@ namespace Exemplos
             Console.WriteLine(mul.nome());
             Console.WriteLine(mul.idade());
             Console.WriteLine(mul.contas(a, b));
+
+            Console.ReadKey();
+
         }
     }
 }
